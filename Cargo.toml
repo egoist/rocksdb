@@ -8,10 +8,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
-napi = { version = "2.12.2", default-features = false, features = [
-    "napi4",
-    "async",
-] }
+napi = { version = "2.12.2", default-features = false, features = ["napi4"] }
 napi-derive = "2.12.2"
 rocksdb = "0.22"
 once_cell = "1.19.0"

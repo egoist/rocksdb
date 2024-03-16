@@ -58,7 +58,7 @@ impl Task for ConnectTask {
     Ok(db_id)
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
@@ -96,7 +96,7 @@ impl Task for GetItemTask {
     }
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
@@ -129,7 +129,7 @@ impl Task for SetItemTask {
     Ok(())
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
@@ -184,7 +184,7 @@ impl Task for GetKeysTask {
     Ok(keys)
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
@@ -216,7 +216,7 @@ impl Task for RemoveItemTask {
     Ok(())
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
@@ -248,7 +248,7 @@ impl Task for CloseTask {
     Ok(())
   }
 
-  fn resolve(&mut self, env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
+  fn resolve(&mut self, _env: napi::Env, output: Self::Output) -> napi::Result<Self::JsValue> {
     Ok(output)
   }
 }
