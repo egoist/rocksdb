@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "main": "index.js",
   "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "napi": {
     "name": "rocksdb",
     "triples": {
@@ -10,6 +13,9 @@
         "aarch64-apple-darwin"
       ]
     }
+  },
+  "repository": {
+    "url": "https://github.com/egoist/rocksdb"
   },
   "license": "MIT",
   "devDependencies": {
