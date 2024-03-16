@@ -68,7 +68,7 @@ jobs:
         with:
           version: 0.11.0
       - name: Upgrade
-        if: ${{ matrix.settings.target == 'ubuntu-latest' }}
+        if: ${{ matrix.settings.host == 'ubuntu-latest' }}
         run: sudo apt-get update && sudo apt-get upgrade -y
         shell: bash
       - name: Setup toolchain
